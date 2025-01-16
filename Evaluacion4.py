@@ -23,3 +23,9 @@ df["Precio total"]= (PT_P1, PT_P2, PT_P3, PT_P4, PT_P5)
 
 
 
+fig, ax=plt.subplots(nrows=1, ncols=1, figsize=(10,6))
+ax.bar(x= df.index, height =df["Precio total"])
+ax.set_title("Precio Total Por Producto")
+ax.set_ylabel("Precio Total")
+ax.set_xlabel("Productos")
+plt.savefig("Precio_total.png")
