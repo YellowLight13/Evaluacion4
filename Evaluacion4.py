@@ -9,3 +9,17 @@ producto=["Producto 1", "Producto 2", "Producto 3", "Producto 4", "Producto 5"]
 df=pd.DataFrame(productos, index=producto, columns=encabezados)
 
 df.to_csv('proyecto_ventas.csv', index=False)
+
+
+
+PT_P1= df["Cantidad"].iloc[0]* df["Precio"].iloc[0]
+PT_P2= df["Cantidad"].iloc[1]* df["Precio"].iloc[1]
+PT_P3= df["Cantidad"].iloc[2]* df["Precio"].iloc[2]
+PT_P4= df["Cantidad"].iloc[3]* df["Precio"].iloc[3]
+PT_P5= df["Cantidad"].iloc[4]* df["Precio"].iloc[4]
+
+df["Precio total"]= (PT_P1, PT_P2, PT_P3, PT_P4, PT_P5)
+
+
+
+
